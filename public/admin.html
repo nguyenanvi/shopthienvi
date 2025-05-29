@@ -235,7 +235,7 @@
     ></section>
     <script>
       var config = {
-        serverUri: " https://shopthienvi-server-7aa45692c6bb.herokuapp.com",
+        serverUri: "https://shopthienvi-server-7aa45692c6bb.herokuapp.com",
         notificationTimeInterval: 5,
       };
 
@@ -403,7 +403,13 @@
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(obj),
           });
+
+          console.log("Raw response:", response); // Debugging
+
           const data = await response.json();
+
+          console.log("Response JSON:", data);
+          
           if (response.ok) {
             sessionStorage.token = data.token;
             sessionStorage.tokenExpires = new Date().getTime() + data.expiresIn * 1000; // Set token expiration time to 1 hour
