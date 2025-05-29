@@ -5,14 +5,14 @@
     "base_price": "1.000đ - 37.000đ",
     "currency": "VND",
     "specifications": {
-      "Loại giấy": [
+      "1_Loại giấy": [
         "1 tấm dầy bóng", 
         "8 tấm dầy bóng", 
         "16 tấm dầy bóng - Tặng 2 tấm",
         "1 tấm dầy bóng lâu phai (Kodak)", 
         "8 tấm dầy bóng lâu phai (Kodak)"
       ],
-      "Ép giấy": [
+      "2_Ép giấy": [
         "Không ép", 
         "Ép Hologram", 
         "Ép dẻo Plastic", 
@@ -77,9 +77,9 @@
     "base_price": "1.000đ - 29.000đ",
     "currency": "VND",
     "specifications": {
-      "Cỡ giấy": ["A5", "A4", "A3"],
-      "Loại giấy": ["Mỏng in VP 80gsm", "Dầy 160 gsm", "Dầy bóng 120gsm", "Dầy bóng 160gsm (Kodak)", "Decal bóng 100gsm"],
-      "Ép giấy": ["Không ép", "Ép Hologram", "Ép dẻo Plastic", "Hologram + Plastic"]
+      "1_Cỡ giấy": ["A5", "A4", "A3"],
+      "2_Loại giấy": ["Mỏng in VP 80gsm", "Dầy 160 gsm", "Dầy bóng 120gsm", "Dầy bóng 160gsm (Kodak)", "Decal bóng 100gsm"],
+      "3_Ép giấy": ["Không ép", "Ép Hologram", "Ép dẻo Plastic", "Hologram + Plastic"]
     },
     "specification": {
       "0_0_0": 500,
@@ -219,7 +219,7 @@
     "base_price": "10.000đ",
     "currency": "VND",
     "specifications": {
-      "Cỡ hình": ["9 tấm 2x3", "9 tấm 3x4", "5 tấm 4x6","Mix đủ cỡ"]
+      "1_Cỡ hình": ["9 tấm 2x3", "9 tấm 3x4", "5 tấm 4x6","Mix đủ cỡ"]
     },
     "specification": {
       "0": 5000,

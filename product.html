@@ -3,17 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <title>Bảng giá in ảnh - gửi hình em in lấy liền</title>
-    <link rel="shortcut icon" href="favicon.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.jpg" type="image/x-icon" />
     <meta name="robots" content="index, follow" />
 
     <meta name="author" content="An Vĩ - Dịch vụ in ảnh tại An Giang" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="IE=7">
-    <meta name="description" content="Dịch vụ in ảnh giá rẻ: in ảnh 6x9, A3, A4, A5, ảnh chân dung. Ép nhựa, in lấy ngay. Gửi hình qua email, Zalo hoặc điện thoại. Liên hệ ngay!" />
-    <meta name="keywords" content="in ảnh, dịch vụ in ảnh, in ảnh lấy ngay, ép nhựa, in ảnh giá rẻ, An Giang" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <meta
+      name="description"
+      content="Dịch vụ in ảnh giá rẻ: in ảnh 6x9, A3, A4, A5, ảnh chân dung. Ép nhựa, in lấy ngay. Gửi hình qua email, Zalo hoặc điện thoại. Liên hệ ngay!"
+    />
+    <meta
+      name="keywords"
+      content="in ảnh, dịch vụ in ảnh, in ảnh lấy ngay, ép nhựa, in ảnh giá rẻ, An Giang"
+    />
 
     <meta property="og:title" content="Dịch vụ in ảnh tại An Giang" />
-    <meta property="og:description" content="In ảnh 6x9, A3, A4, A5, chân dung, ép nhựa, in lấy ngay. Liên hệ ngay để nhận ảnh chất lượng cao!" />
+    <meta
+      property="og:description"
+      content="In ảnh 6x9, A3, A4, A5, chân dung, ép nhựa, in lấy ngay. Liên hệ ngay để nhận ảnh chất lượng cao!"
+    />
     <meta property="og:image" content="IMG_1197.jpg" />
     <meta property="og:url" content="https://nguyenanvi.github.io/Printing" />
     <meta property="og:type" content="website" />
@@ -86,7 +95,7 @@
           color: var(--main-primary-diff);
           position: absolute;
           padding: 2rem;
-          z-index: 999;
+          z-index: 3;
         }
       }
       .decor-icons {
@@ -148,7 +157,7 @@
         box-shadow: inset 0 1.5rem 0 0 var(--main-primary-diff);
         color: var(--main-primary);
       }
-     
+
       @media only screen and (max-width: 1000px) {
         body {
           margin: 0;
@@ -167,7 +176,6 @@
             height: max-content !important;
           }
         }
-      
       }
       @media only screen and (max-width: 600px) {
         .contact {
@@ -179,7 +187,6 @@
             height: max-content !important;
           }
         }
-    
       }
 
       .product {
@@ -196,7 +203,7 @@
       .product__photo {
         position: relative;
         margin-right: 2rem;
-        
+
         display: flex;
         justify-content: center;
       }
@@ -204,7 +211,7 @@
         display: flex;
         flex-direction: column;
 
-        height: auto ;
+        height: auto;
         max-width: 400px;
         width: 100%;
       }
@@ -216,11 +223,11 @@
       .photo-main img {
         box-shadow: 4px 4px 25px -2px rgba(0, 0, 0, 0.3);
         border-radius: 16px;
-        height: auto ;
+        height: auto;
         width: inherit !important;
         max-width: 400px;
         aspect-ratio: 1/1;
-        object-fit: cover ;
+        object-fit: cover;
       }
       .photo-album {
         height: fit-content;
@@ -242,18 +249,18 @@
         height: 75px;
         border-radius: 8px;
         overflow: hidden;
-        margin: 0 1em 0  0;
+        margin: 0 1em 0 0;
         padding: 0;
         box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 
-        &>img{
+        & > img {
           width: 100%;
           object-fit: cover;
         }
 
-        transition: transform .3s ease-in-out;
+        transition: transform 0.3s ease-in-out;
 
-        &:hover{
+        &:hover {
           transform: scale(105%);
         }
       }
@@ -305,8 +312,9 @@
         color: #fff;
       }
 
-      button, a[type=button], a[type=button]:visited{
-
+      button,
+      a[type="button"],
+      a[type="button"]:visited {
         display: inline-block;
         text-decoration: none;
 
@@ -316,15 +324,15 @@
         font-family: "Quicksand";
         padding: 1rem 2rem;
         font-size: large;
-        
+
         color: var(--main-primary-diff);
         border: none;
         border-radius: 12px;
         box-shadow: 0 0 10px #aaa;
         background-color: var(--main-primary);
 
-        transition: transform .3s ease-in-out;
-        &:hover{
+        transition: transform 0.3s ease-in-out;
+        &:hover {
           transform: scale(105%);
         }
       }
@@ -336,25 +344,25 @@
         cursor: pointer;
         border-radius: 7px;
 
-        width:calc(10em + 6px);
-        height:calc(3em + 6px);
-        font-size:1.5em;
-        font-weight:bold;
+        width: calc(10em + 6px);
+        height: calc(3em + 6px);
+        font-size: 1.5em;
+        font-weight: bold;
 
         position: relative;
         bottom: -1.1rem;
-        animation:slidebg 2s linear infinite;
+        animation: slidebg 2s linear infinite;
       }
-      .buy--btn:disabled{
+      .buy--btn:disabled {
         background-color: #474747;
-        text-decoration:line-through;
-        cursor:no-drop;
+        text-decoration: line-through;
+        cursor: no-drop;
       }
-      .buy--btn::before{
+      .buy--btn::before {
         display: none;
         content: "Chọn phân loại có sẵn sau đó nhấn tư vấn.";
       }
-      .buy--btn:disabled:hover::before{
+      .buy--btn:disabled:hover::before {
         display: block;
         top: -4rem;
         left: -1px;
@@ -366,18 +374,17 @@
         background-color: #ff3f40;
       }
 
-      .container :has(button){
+      .container :has(button) {
         overflow: visible;
       }
-      
 
       @keyframes slidebg {
         to {
-          background-position:10em;
+          background-position: 10em;
         }
       }
       /* ----- Notification Popup ----- */
-      .notification-overlay{
+      .notification-overlay {
         height: 100vh !important;
         width: 100vw !important;
         max-width: 100vw !important;
@@ -387,9 +394,9 @@
         left: 0px;
 
         background-color: #000a;
-        z-index: 1000;
+        z-index: 9;
 
-        & a{
+        & a {
           cursor: pointer;
         }
       }
@@ -405,10 +412,10 @@
         padding: 15px 20px;
         border: 1px solid #aaa;
         border-radius: 5px;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-        z-index: 1000;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        z-index: 9;
 
-        &>.notification-header{
+        & > .notification-header {
           display: flex;
           justify-content: space-between;
           align-items: center;
@@ -416,47 +423,47 @@
           padding-block: 0;
           border-bottom: 1px solid #aaa;
 
-          &> h2{
+          & > h2 {
             color: #666;
           }
 
-          & > a{
+          & > a {
             background-color: red;
             color: white;
             border-radius: 7px;
             transform: scaleX(105%);
             padding: 1rem;
-            transition: transform .3s ease-in-out;
-            &:hover{
+            transition: transform 0.3s ease-in-out;
+            &:hover {
               transform: scaleY(105%) scaleX(110%);
             }
           }
         }
-        &>.notification-body{
+        & > .notification-body {
           text-indent: 1rem;
           font-size: x-large !important;
           padding-block: 1rem;
         }
-        &>.notification-footer{
+        & > .notification-footer {
           display: flex;
           justify-content: flex-end;
           align-items: end;
 
-          &> a{
+          & > a {
             background-color: var(--main-primary);
             color: var(--main-primary-diff);
             border: 2px solid var(--main-primary);
 
-            &:last-child{
+            &:last-child {
               color: var(--main-primary);
               background-color: var(--main-primary-diff);
               border: 2px solid var(--main-primary);
             }
             margin-left: 8px;
             border-radius: 7px;
-            padding:  0.5rem 1rem;
-            transition: transform .3s ease-in-out;
-            &:hover{
+            padding: 0.5rem 1rem;
+            transition: transform 0.3s ease-in-out;
+            &:hover {
               transform: scale(105%);
             }
           }
@@ -470,44 +477,43 @@
       .notification-popup a:hover {
         text-decoration: underline;
       }
-      #home-btn-alternative{
-        display:none;
+      #home-btn-alternative {
+        display: none;
         text-align: center;
         width: 100%;
         max-width: 400px;
         margin-inline: auto;
       }
 
-
       @media only screen and (max-width: 1000px) {
-        .product{
+        .product {
           flex-direction: column;
           padding: 1rem !important;
-          &>*{
+          & > * {
             margin-inline: 0;
             margin-block-start: 1rem;
           }
         }
-        .product__info{
+        .product__info {
           display: flex;
           flex-direction: column;
           justify-content: center;
           align-items: center;
-          & > *{
-          width: 100%;
-          max-width: 400px;
-          
-        }}
-        #home-btn{
+          & > * {
+            width: 100%;
+            max-width: 400px;
+          }
+        }
+        #home-btn {
           display: none;
         }
-        #home-btn-alternative{
+        #home-btn-alternative {
           display: block;
         }
-        h3{
-          margin:0;
+        h3 {
+          margin: 0;
         }
-        #buy--btn{
+        #buy--btn {
           margin-bottom: 2rem;
         }
         .notification-popup {
@@ -518,29 +524,66 @@
           top: 35%;
           left: 0px;
           border-radius: 5px;
-          box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-          z-index: 1000;
-
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+          z-index: 9;
         }
       }
       @media only screen and (max-width: 600px) {
-        .notification-footer{
+        .notification-footer {
           flex-direction: column;
-          &>*{
+          & > * {
             width: 100%;
             margin-left: 0;
             margin-top: 8px;
             text-align: center;
           }
         }
-        .product__info{
+        .product__info {
           margin: 0;
           padding: 0;
+        }
+      }
+       /* Modal Styles */
+      .modal {
+        display: none; 
+        position: fixed; 
+        z-index: 1000; 
+        left: 0;
+        top: 0;
+        width: 100vw !important; 
+        max-width: unset !important;
+        height: 100vh !important;
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0, 0, 0); /* Fallback color */
+        background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+        & button{
+          margin-right: 1rem;
+          width: fit-content;
+        }
+        & > .modal-content {
+          background-color: #fefefe;
+          margin: 15% auto; /* 15% from the top and centered */
+          padding: 20px;
+          border: 1px solid #888;
+          width: 750px; /* Could be more or less, depending on screen size */
+          
+        }
+        @media only screen and (max-width: 750px) {
+          width: 100%;
+          background-color: #fefefe;
+          & > .modal-content {
+            padding:1rem;
+            padding-right:2rem;
+            width: 100%;
+            margin:auto;
+            border: none  ;
+          }
         }
       }
     </style>
   </head>
   <body>
+   
     <div class="container">
       <div class="header">
         <p>in cả thế giới !!!</p>
@@ -554,11 +597,13 @@
       <img src="icon4.png" alt="" />
     </div>
     <div id="product" class="container product">
-      <a type="button" id="home-btn-alternative" href="index.html">&#127968;&nbsp; trang chủ</a>
+      <a type="button" id="home-btn-alternative" href="index.html"
+        >&#127968;&nbsp; trang chủ</a
+      >
       <div class="product__photo">
         <div class="photo-container">
           <div class="photo-main">
-            <img id="mainImage" src="" alt="Product Image">
+            <img id="mainImage" src="" alt="Product Image" />
           </div>
           <div class="photo-album">
             <ul id="photoAlbum"></ul>
@@ -566,21 +611,25 @@
         </div>
       </div>
       <div class="product__info">
-          <a id="home-btn" type="button" href="index.html">&#127968;&nbsp; trang chủ</a>
-          <div class="title">
-            <h1 id="productName">Product Name</h1>
-            <span id="productCode">COD: 00000</span>
-          </div>
-          <div class="price">
-            <h3>Giá:</h3>
-            <span id="productPrice"></span>
-          </div>
-          <div class="variant">
-            <h3>Phân loại</h3>
-            <div id="specifications"></div>
-          </div>
-          <button id="buy--btn" class="buy--btn" disabled="disabled">Đặt in và tư vấn</button>
+        <a id="home-btn" type="button" href="index.html"
+          >&#127968;&nbsp; trang chủ</a
+        >
+        <div class="title">
+          <h1 id="productName">Product Name</h1>
+          <span id="productCode">COD: 00000</span>
         </div>
+        <div class="price">
+          <h3>Giá:</h3>
+          <span id="productPrice"></span>
+        </div>
+        <div class="variant">
+          <h3>Phân loại</h3>
+          <div id="specifications"></div>
+        </div>
+        <button id="buy--btn" class="buy--btn" disabled="disabled">
+          Đặt in và tư vấn
+        </button>
+      </div>
     </div>
     <div class="container contact">
       <div class="contact-info">
@@ -611,9 +660,112 @@
       </div>
       <img src="QR_zalo.png" alt="" id="qrzalo" />
     </div>
+     <div class="modal" id="orderModal">
+      <div class="modal-content">
+        <h2>Đặt in và tư vấn</h2>
+        <p>
+          Điền thông tin dưới đây và chúng tôi sẽ liên hệ với bạn trong thời
+          gian sớm nhất:
+        </p>
+        <form id="orderForm">
+          <style>
+            form {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+            }
+            form > * {
+              margin-bottom: 1rem;
+            }
+            form > div {
+              display: flex;
+              flex-direction: column;
+              width: 100%;
+            }
+            form > div > label {
+              margin-bottom: 0.5rem;
+            }
+            form > div > input {
+              padding: 0.5rem;border-radius: 5px;border: 1px solid #ccc;
+            }
+          </style>
+          <div style="display: flex; flex-direction: row;">
+           
+            <div style="width: 100%;">
+              <div style="display: flex; flex-direction: column; width: 100%; margin-bottom: 1rem;">
+                <label style="margin-bottom: 0.5rem;" for="productName">Tên sản phẩm:</label>
+                <input style="padding: 0.5rem;border-radius: 5px;border: 1px solid #ccc;  background-color: #0005; color: #fffd; pointer-events: none;" type="text" value="" id="input-productName" name="productName"/>
+              </div>
+              <div style="display: flex; flex-direction: column; width: 100%; margin-bottom: 1rem;">
+                <label style="margin-bottom: 0.5rem;" for="specifications">Phân loại:</label>
+                <input style="padding: 0.5rem;border-radius: 5px;border: 1px solid #ccc;  background-color: #0005; color: #fffd; pointer-events: none;" type="text" value="" id="input-specifications" name="specs"/>
+              </div>
+              <div style="display: flex; flex-direction: column; width: 100%; margin-bottom: 1rem;">
+                <label style="margin-bottom: 0.5rem;" for="quantity">Số lượng:</label>
+                <input style="padding: 0.5rem;border-radius: 5px;border: 1px solid #ccc;" type="number" value="1" id="input-quantity" name="quantity" required />
+              </div>
+            </div>
+             <div style="height: 200px; aspect-ratio: 1/1;">
+              <img style="aspect-ratio: 1/1; width: 180px; margin-left: 20px; object-fit: cover;" alt="" id="input-productImg"/>
+            </div>
+          </div>
+          <div>
+            <label for="customerName">Tên khách hàng:</label>
+            <input type="text" id="input-customerName" name="customerName" required />
+          </div>
+          <div>
+            <label for="customerPhone">Số điện thoại:</label>
+            <input type="tel" id="input-customerPhone" name="customerPhone" required/>
+          </div>
+          <div style="display: flex; flex-direction: row; gap: 1rem;">
+            <div>
+              <label for="isUsingZalo">Sử dụng Zalo?</label>
+              <input type="checkbox" id="isUsingZalo" name="isUsingZalo" />
+            </div>
+            <div>
+              <label for="isUsingEmail">Sử dụng Email?</label>
+              <input type="checkbox" id="isUsingEmail" name="isUsingMail" />
+            </div>
+          </div>
+          <div when="isUsingEmail" style="display: none;">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" />
+          </div>
+          <script>
+            document.getElementById("isUsingEmail").addEventListener("change", function () {
+              const emailField = document.querySelector('div[when="isUsingEmail"]');
+              if (this.checked) {
+                emailField.style.display = "flex";
+              } else {
+                emailField.style.display = "none";
+              }
+            });
+          </script>
+          <div>
+            <label for="note">Ghi chú:</label>
+            <input type="text" id="note" name="note" />
+          </div>
+          <div>
+            <label for="captchaInput">
+              Xác nhận: <span id="captchaQuestion"></span>
+            </label>
+            <input type="text" id="captchaInput" name="captchaInput" required />
+          </div>
+          <div style="display: flex; flex-direction: row;">
+            <button type="button" id="orderForm-submit">Gửi</button>
+            <button type="button" onclick="document.getElementById('orderModal').style.display='none';">Hủy</button>
+          </div>
+        </form>
+      </div>
+    </div>
 
     <script>
+      let config = {
+        serverUri: "http://localhost:3001", // Change this to your server URI
+      };
       let selectedSpecs = {}; // To store the user's selected specification indices
+      let captchaAnswer = null;
 
       // Helper: Get query parameter from URL
       function getQueryParam(param) {
@@ -621,53 +773,81 @@
         return urlParams.get(param);
       }
 
+      // Generate a simple math captcha
+      function generateCaptcha() {
+        const a = Math.floor(Math.random() * 10) + 1;
+        const b = Math.floor(Math.random() * 10) + 1;
+        captchaAnswer = a + b;
+        document.getElementById("captchaQuestion").textContent = `${a} + ${b} = ?`;
+        document.getElementById("captchaInput").value = "";
+      }
+
       // This function will update both the price and the displayed image(s)
       function updateDisplay(product, defaultImages, mainImage, photoAlbum) {
         const specKey = Object.values(selectedSpecs).join("_");
-        let buyButton = document.getElementById('buy--btn');
+        const buyButton = document.getElementById("buy--btn");
 
         // Update the price
         const productPriceElement = document.getElementById("productPrice");
-        if ((product.specification[specKey] !== undefined) && (!isNaN(product.specification[specKey]))) {
+        if (
+          product.specification[specKey] !== undefined &&
+          !isNaN(product.specification[specKey])
+        ) {
           const price = product.specification[specKey];
-          productPriceElement.textContent = new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(price);
-          + "đ";
-          buyButton.removeAttribute('disabled');
-        } else if ((product.specification[specKey] !== undefined) && (isNaN(product.specification[specKey]))) {
+          productPriceElement.textContent = new Intl.NumberFormat("vi-VN", {
+            style: "currency",
+            currency: "VND",
+          }).format(price);
+          +"đ";
+          buyButton.removeAttribute("disabled");
+        } else if (
+          product.specification[specKey] !== undefined &&
+          isNaN(product.specification[specKey])
+        ) {
           const price = product.specification[specKey];
           productPriceElement.textContent = product.specification[specKey];
-          if(product.specification[specKey] === "Không có hàng"){
-            buyButton.setAttribute('disabled', 'disabled');
-          } else{
-            buyButton.removeAttribute('disabled');
+          if (product.specification[specKey] === "Không có hàng") {
+            buyButton.setAttribute("disabled", "disabled");
+          } else {
+            buyButton.removeAttribute("disabled");
           }
         } else {
           productPriceElement.textContent = product.base_price;
-          buyButton.setAttribute('disabled', 'disabled');
+          buyButton.setAttribute("disabled", "disabled");
         }
-        
+
         // Update the displayed image based on the specKey
-        if (specKey && product.images[specKey] && product.images[specKey].length > 0) {
+        if (
+          specKey &&
+          product.images[specKey] &&
+          product.images[specKey].length > 0
+        ) {
           mainImage.src = product.images[specKey][0];
           photoAlbum.innerHTML = product.images[specKey]
-          .map(img => `<li onclick="showImage(event)"><img src="${img}" alt="Product Image"></li>`)
-          .join('');
+            .map(
+              (img) =>
+                `<li onclick="showImage(event)"><img src="${img}" alt="Product Image"></li>`
+            )
+            .join("");
         } else {
           // Fallback to using default images if no spec-specific image is available
           if (defaultImages.length > 0) {
             mainImage.src = defaultImages[0];
             photoAlbum.innerHTML = defaultImages
-            .map(img => `<li onclick="showImage(event)"><img src="${img}" alt="Product Image"></li>`)
-            .join('');
+              .map(
+                (img) =>
+                  `<li onclick="showImage(event)"><img src="${img}" alt="Product Image"></li>`
+              )
+              .join("");
           }
         }
       }
 
       // Fetch data and render the product details
-      fetch('data.json')
-        .then(response => response.json())
-        .then(data => {
-          const id = getQueryParam('id') || 0;
+      fetch("data.json")
+        .then((response) => response.json())
+        .then((data) => {
+          const id = getQueryParam("id") || 0;
           const product = data[id];
 
           if (!product) {
@@ -681,118 +861,170 @@
           }
 
           // Update product text details
-          document.getElementById('productName').textContent = product.name;
-          document.getElementById('productCode').textContent = 'MS: ' + ('00000' + id).slice(-5);
-          document.getElementById('productPrice').textContent = product.base_price;
+          document.getElementById("productName").textContent = product.name;
+          document.getElementById("productCode").textContent =
+            "MS: " + ("00000" + id).slice(-5);
+          document.getElementById("productPrice").textContent =
+            product.base_price;
 
           // Get references to image elements
-          const mainImage = document.getElementById('mainImage');
-          const photoAlbum = document.getElementById('photoAlbum');
-          const defaultImages = (product.images.default || []);
+          const mainImage = document.getElementById("mainImage");
+          const photoAlbum = document.getElementById("photoAlbum");
+          const defaultImages = product.images.default || [];
 
           // Set default images initially
           if (defaultImages.length > 0) {
             mainImage.src = defaultImages[0];
             photoAlbum.innerHTML = defaultImages
-            .map(img => `<li onclick="showImage(event)"><img src="${img}" alt="Product Image"></li>`)
-            .join('');
+              .map(
+                (img) =>
+                  `<li onclick="showImage(event)"><img src="${img}" alt="Product Image"></li>`
+              )
+              .join("");
           }
 
           // Populate specifications – each specification will render buttons
-          const specDiv = document.getElementById('specifications');
-          for (const [specType, values] of Object.entries(product.specifications)) {
-            const specSection = document.createElement('div');
+          const specDiv = document.getElementById("specifications");
+          for (const [specType, values] of Object.entries(
+            product.specifications
+          )) {
+            const specSection = document.createElement("div");
             specSection.innerHTML = `<h4>${specType}</h4>`;
             values.forEach((val, idx) => {
-              const btn = document.createElement('button');
+              const btn = document.createElement("button");
               btn.textContent = val;
-              btn.className = 'spec-option';
+              btn.className = "spec-option";
               btn.dataset.specType = specType;
               btn.dataset.specValue = idx;
-              btn.addEventListener('click', function () {
+              btn.addEventListener("click", function () {
                 // Remove 'active' class for all buttons in this group, then mark this one active.
-                document.querySelectorAll(`button[data-spec-type="${specType}"]`)
-                  .forEach(button => button.classList.remove('active'));
-                btn.classList.add('active');
+                document
+                  .querySelectorAll(`button[data-spec-type="${specType}"]`)
+                  .forEach((button) => button.classList.remove("active"));
+                btn.classList.add("active");
                 selectedSpecs[specType] = idx;
                 updateDisplay(product, defaultImages, mainImage, photoAlbum);
               });
               specSection.appendChild(btn);
             });
+            // Append the specSection to the main specDiv
             specDiv.appendChild(specSection);
           }
 
           // CONTACT ME button functionality (captures the product section as canvas)
-          document.querySelector('.buy--btn').addEventListener('click', function (e) {
-            e.preventDefault();
-            html2canvas(document.getElementById('product')).then(canvas => {
-              const notification = document.createElement('div');
-              notification.id = 'notification';
-              notification.className = 'notification-overlay';
-              notification.innerHTML = `
-                <div class='notification-popup'>
-                  <div class="notification-header">
-                    <h2>Đã chụp màn hình!</h2>
-                    <a onclick="closeNotification()">X</a>
-                  </div>
-                  <div class="notification-body">
-                    Đã chụp màn hình, vui lòng liên hệ mình để được tư vấn trực tiếp!
-                  </div>
-                  <div class="notification-footer">
-                    <a href="mailto:nguyenanvi122333@gmail.com" target="_blank">Gửi mail</a>
-                    <a href="https://zalo.me/0939963285" target="_blank">Chat Zalo</a>
-                    <a href="tel:+84939963285" target="_blank">Gọi Điện</a>
-                    <a onclick="closeNotification()">Để sau</a>
-                  </div>
-                </div>
-              `
-              
-              const link = document.createElement('a');
-              link.download = 'gửi hình Vĩ tư vấn.png'; // File name for the download
-              link.href = canvas.toDataURL("image/png");
-              
-              // Trigger the download
-              link.click();
+          document.querySelector(".buy--btn")
+            .addEventListener("click", function (e) {
+              e.preventDefault();
 
-              document.body.appendChild(notification);
-              setTimeout(() => notification.remove(), 150000);
+              const input_productImg= document.getElementById("input-productImg");
+              const mainImage = document.getElementById("mainImage");
+              input_productImg.src = mainImage.src;
+              
+              const orderModal = document.getElementById("orderModal");
+              orderModal.style.display = "block";
+              let specsLine = "";
+              Object.entries(product.specifications).forEach(([key, value]) => {
+                specsLine += `${key} : ${value[selectedSpecs[key]]}; `;
+              });
+              const productName = document.getElementById("input-productName");
+              const specs = document.getElementById("input-specifications");
+              productName.value = product.name;
+              specs.value =specsLine;
+              generateCaptcha();
             });
-          });
+          document
+            .getElementById("orderForm-submit")
+            .addEventListener("click", function (e) {
+              e.preventDefault();
+              const requiredFields = [
+                "input-quantity",
+                "input-customerName",
+                "input-customerPhone",
+              ];
+              for (const field of requiredFields) {
+                const inputField = document.getElementById(field);
+                if (!inputField.value) {
+                  alert("Vui lòng điền tất cả các trường bắt buộc.");
+                  return;
+                }
+              }
+
+              const userAnswer = document.getElementById("captchaInput").value;
+              if (parseInt(userAnswer) !== captchaAnswer) {
+                alert("Câu trả lời xác nhận không đúng. Vui lòng thử lại!");
+                generateCaptcha();
+                return;
+              }
+
+              const orderModal = document.getElementById("orderModal");
+              const orderForm = document.getElementById("orderForm");
+              const orderData = new FormData(orderForm);
+              // orderData to json
+              const orderDataJson = {};
+              orderData.forEach((value, key) => {
+                orderDataJson[key] = value;
+              });
+
+              // send order data to server (/order/add) (or handle it as needed)
+              fetch(`${config.serverUri}/order/add`, {
+                method: "POST",
+                body: JSON.stringify(orderDataJson),
+                headers: {
+                  "Accept": "application/json",
+                  "Content-Type": "application/json",
+                },
+              })
+                .then((response) => {
+                  if (!response.ok) {
+                    throw new Error("Network response was not ok");
+                  }
+                  return response.json();
+                })
+                .then((data) => {
+                  console.log("Order submitted successfully:", data);
+                })
+                .catch((error) => {
+                  console.error("Error submitting order:", error);
+                });
+
+              // If captcha is correct, proceed with order submission
+              document.getElementById("orderModal").style.display = "none";
+              alert("Gửi đơn hàng thành công! Chúng tôi sẽ liên hệ bạn sớm.");
+            });
         })
-        .catch(error => {
-          console.error('Error loading product data:', error);
+        .catch((error) => {
+          console.error("Error loading product data:", error);
         });
 
-        function closeNotification(){
-          try {
-            document.getElementById('notification').remove();
-          } catch (error) {
-            console.error("error closing notification:", error)
-          }        
+      function closeNotification() {
+        try {
+          document.getElementById("notification").remove();
+        } catch (error) {
+          console.error("error closing notification:", error);
         }
+      }
 
-        function showImage(event) {
-            // Find the image element inside the clicked element
-            const imgElement = event.currentTarget.querySelector("img");
+      function showImage(event) {
+        // Find the image element inside the clicked element
+        const imgElement = event.currentTarget.querySelector("img");
 
-            // Check if an image was found
-            if (imgElement) {
-                const imageSrc = imgElement.src;
+        // Check if an image was found
+        if (imgElement) {
+          const imageSrc = imgElement.src;
 
-                document.getElementById('mainImage').setAttribute('src', imageSrc);
-            } else {
-                console.log("No image found inside the clicked element.");
-            }
+          document.getElementById("mainImage").setAttribute("src", imageSrc);
+        } else {
+          console.log("No image found inside the clicked element.");
         }
+      }
 
-        // for header background's
-        function parallax() {
-          var parallax = document.getElementById("parallax");
-          parallax.style.marginTop = -(window.pageYOffset / 2)+'px';
-        }
+      // for header background's
+      function parallax() {
+        var parallax = document.getElementById("parallax");
+        parallax.style.marginTop = -(window.pageYOffset / 2) + "px";
+      }
 
-        window.addEventListener("scroll", parallax, false);
-
+      window.addEventListener("scroll", parallax, false);
     </script>
   </body>
 </html>
