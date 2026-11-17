@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="favicon.jpg" type="image/x-icon">
+<meta name="robots" content="index, follow" />
+
+<meta name="author" content="An Vĩ - Dịch vụ in ảnh tại An Giang" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="IE=7">
+<meta name="description" content="Dịch vụ in ảnh giá rẻ: in ảnh 6x9, A3, A4, A5, ảnh chân dung. Ép nhựa, in lấy ngay. Gửi hình qua email, Zalo hoặc điện thoại. Liên hệ ngay!" />
+<meta name="keywords" content="in ảnh, dịch vụ in ảnh, in ảnh lấy ngay, ép nhựa, in ảnh giá rẻ, An Giang" />
+
+<meta property="og:title" content="Dịch vụ in ảnh tại An Giang" />
+<meta property="og:description" content="In ảnh 6x9, A3, A4, A5, chân dung, ép nhựa, in lấy ngay. Liên hệ ngay để nhận ảnh chất lượng cao!" />
+<meta property="og:image" content="IMG_1197.jpg" />
+<meta property="og:url" content="https://nguyenanvi.github.io/Printing" />
+<meta property="og:type" content="website" />
+
+<title>Bảng Giá In Ảnh</title>
+
+<style>
+@font-face {
+    font-family: "zzz";
+    src: url(ZZZNeue-VariantA-0.003.otf);
+}
+:root {
+    --a4-width: 794px;
+    --a4-height: 1123px;
+    --zoom: 1.25;
+    --lens-size : 100px;
+
+    --bw-table: #babcc0;
+    --color-table: #f6bdd5;
+    --card-table: #63d38e;
+    /* Backgrounds */
+    --bg: #f8fafc;
+    --surface: #ffffff;
+    --surface-2: #f1f5f9;
+
+    /* Text */
+    --text: #0f172a;
+    --text-secondary: #475569;
+
+    /* Brand */
+    --primary: #2563eb;
+    --secondary: #ec4899;
+
+    /* Shadows */
+    --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+html[data-theme="dark"] {
+    --bg: #0f172a;
+    --surface: #1e293b;
+    --surface-2: #334155;
+
+    --text: #f8fafc;
+    --text-secondary: #cbd5e1;
+
+    --primary: #3b82f6;
+    --secondary: #f472b6;
+
+    --border: #475569;
+
+    --shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background: var(--surface-2);
+    color: var(--text);
+    transition:
+        background-color .3s ease,
+        color .3s ease;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.a4-page{
+    width: var(--a4-width);
+    height: var(--a4-height);
+    background: var(--bg);
+    color: var(--text);
+    border:3px solid var(--border);
+    box-shadow: var(--shadow);
+    overflow:hidden;
+    border-radius: 16px;
+    margin: auto auto;
+  }
+
+@media print {
+    .a4-page {
+        margin: 0;
+        box-shadow: none;
+        border: none;
+    }
+}
+
+/* ================= HEADER ================= */
+
+.header{
+    padding:20px;
+}
+
+.header-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    gap:20px;
+}
+
+.header-left{
+    width:160px;
+}
+
+.header-left img{
+    width:100%;
+    display:block;
+}
+
+.header-center{
+    flex:1;
+    text-align:center;
+}
+
+.title{
+    text-wrap-mode: nowrap;
+    font-size:50px;
+    font-weight:900;
+    color: var(--text);
+    line-height:1;
+    text-transform:
+        uppercase;
+    transform:
+        scaleY(1.25);
+    margin-top: 2.5%;
+}
+
+.shop-name{
+    display:inline-block;
+    margin-top:8px;
+    padding:4px 36px;
+    border-radius:40px;
+    background:linear-gradient(90deg,#ec3f89,#e61d61);
+    color: var(--text-secondary);
+    font-size:36px;
+    font-weight:900;
+    text-transform:uppercase;
+}
+
+.header-right{
+    width: 160px;
+}
+
+.header-right img{
+    width:100%;
+    display:block;
+}
+
+/* ================= TABLE COMMON ================= */
+
+.section{
+    padding:0 20px;
+    margin-bottom:20px;
+}
+
+.section:last-of-type{
+    margin-bottom: 10px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1)
+}
+
+th,
+td{
+    padding:6px 8px;
+    text-align:center;
+}
+
+td.text-left{
+    text-align:left;
+}
+thead th{
+    font-size:26px;
+    font-weight:700;
+}
+tbody td{
+    font-size:24px;
+    border-block: 1px solid;
+}
+tbody td:first-child{
+    font-weight:700;
+     background-image: linear-gradient(
+        rgba(255, 255, 255, 0.7), /* white overlay with 30% opacity */
+        rgba(255, 255, 255, 0.7)
+    );
+}
+tbody td:not(:first-child){
+    background-color: var(--surface) !important;
+}
+
+/* ================= BLACK WHITE ================= */
+
+.bw-wrapper{
+    display:flex;
+    gap:0;
+}
+
+.bw-table{
+    flex:1;
+}
+
+.bw-table thead th,
+.bw-table tbody td
+{
+    border-color: var(--bw-table);
+    background-color: var(--bw-table);
+}
+
+.paper-stack{
+    width:200px;
+    height: 165px;
+    margin-top: -60px;
+}
+
+.paper-stack img{
+    width:100%;
+    display:block;
+}
+
+/* ================= COLOR PRINT ================= */
+
+.color-table{
+    border:2px solid #cf2a63;
+}
+
+.color-table thead th,
+.color-table tbody td
+{
+    border-color: var(--color-table);
+    background-color: var(--color-table);
+}
+
+.color-table tbody td:first-child{
+    text-align:left;
+    font-weight:700;
+}
+
+/* ================= CARD PRINT ================= */
+
+.card-section{
+    display:flex;
+    gap:8px;
+}
+
+.card-table{
+    flex:1;
+}
+
+.card-table thead th,
+.card-table tbody td
+{
+    border-color: var(--card-table);
+    background-color: var(--card-table);
+}
+
+.card-table tbody td:first-child{
+    text-align:left;
+}
+
+.business-card-image{
+    width:200px;
+    margin-top: -75px;
+}
+
+.business-card-image img{
+    transform: translatey(90px);
+    width:100%;
+    display:block;
+}
+
+/* ================= ID PHOTO ================= */
+
+.id-banner{
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    position:relative;
+    background:linear-gradient(90deg,#f9ebad,#f3dfa0);
+    border-radius:16px;
+    min-height:120px;
+    width: 540px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:20px 130px 20px 30px;
+}
+
+.id-banner-text{
+    text-align:center;
+}
+
+.id-banner-text h3{
+    font-size:34px;
+    font-weight:900;
+    text-transform:uppercase;
+}
+
+.id-banner-text p{
+    font-size:22px;
+    font-weight:700;
+}
+
+.id-photo-image{
+    position:absolute;
+    right:-20px;
+    top: -10px;
+    width:140px;
+}
+
+.id-photo-image img{
+    width:100%;
+}
+
+
+/* iframe view product's description */
+#lens-preview{
+    position: absolute !important;
+    z-index: 999;
+    border-radius: 16px;
+    border: none;
+    box-shadow: 0 5px 5px var(--text);
+    overflow: hidden;
+    transition: left 0.15s ease-out, top 0.15s ease-out;
+}
+
+/* FOOTER */
+/* ================= FOOTER ================= */
+
+.footer {
+position: relative;
+width: 100%;
+height: 10%;
+display: flex;
+flex-direction: column;
+}
+.wave-animation {
+position: relative;
+width: 100%;
+height: 100%;
+}
+.footer:before,
+.wave-animation {
+background-color: transparent;
+background-image: 
+    url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='1600' height='198'%3e%3cdefs%3e%3clinearGradient id='a' x1='50%25' x2='50%25' y1='-10.959%25' y2='100%25'%3e%3cstop stop-color='%23006dfc' stop-opacity='.25' offset='0%25'/%3e%3cstop stop-color='%23006dfc' offset='100%25'/%3e%3c/linearGradient%3e%3c/defs%3e%3cpath fill='url(%23a)' fill-rule='evenodd' d='M.005 121C311 121 409.898-.25 811 0c400 0 500 121 789 121v77H0s.005-48 .005-77z'/%3e%3c/svg%3e"),
+    url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='1600' height='198'%3e%3cdefs%3e%3clinearGradient id='a' x1='50%25' x2='50%25' y1='-10.959%25' y2='100%25'%3e%3cstop stop-color='%23006dfc' stop-opacity='.25' offset='0%25'/%3e%3cstop stop-color='%23006dfc' offset='100%25'/%3e%3c/linearGradient%3e%3c/defs%3e%3cpath fill='url(%23a)' fill-rule='evenodd' d='M.005 121C311 121 409.898-.25 811 0c400 0 500 121 789 121v77H0s.005-48 .005-77z'/%3e%3c/svg%3e"),
+    url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='1600' height='198'%3e%3cdefs%3e%3clinearGradient id='a' x1='50%25' x2='50%25' y1='-10.959%25' y2='100%25'%3e%3cstop stop-color='%23006dfc' stop-opacity='.25' offset='0%25'/%3e%3cstop stop-color='%23006dfc' offset='100%25'/%3e%3c/linearGradient%3e%3c/defs%3e%3cpath fill='url(%23a)' fill-rule='evenodd' d='M.005 121C311 121 409.898-.25 811 0c400 0 500 121 789 121v77H0s.005-48 .005-77z'/%3e%3c/svg%3e");
+background-repeat: repeat-x;
+background-size: 100% 100%;
+background-position: 0 130%, -50px 130%, 500px 130%;
+
+animation: 20s waves linear infinite forwards;
+}
+
+@keyframes waves {
+    to {
+        background-position: 1600px 130%, 3150px 130%, 5300px 130%;
+    }
+}
+
+.toes{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:flex-end;
+    width: inherit;
+    padding: 10px;
+    
+}
+.toe{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+.toe-nail{
+    /* padding: 20px 20px 20px 0; */
+    width: fit-content;
+
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-end;
+    
+    text-shadow:1px 1px 4px gray;
+}
+.logo{
+    width: 24px;
+    margin-right: 10px;
+    -webkit-filter: drop-shadow(0 0 2px var(--surface));
+    filter: drop-shadow(0 0 2px var(--surface));
+
+}
+
+.contact-detail{
+    font-size:20px;
+    color: var(--surface);
+    text-shadow: 
+        0 0 3px var(--text);
+}
+
+.github-link{
+    padding-top: 10px;
+    font-family: zzz; 
+    font-size: 10px; 
+    text-decoration: none;
+    color: var(--surface);
+    text-shadow: 0 0 3px var(--text);
+
+}
+.github-link:visited{
+    text-decoration: none;
+}
+
+</style>
+
+</head>
+
+<body>
+<div id="content" class="a4-page">
+
+    <!-- HEADER -->
+    <section class="header">
+
+        <div class="header-top">
+
+            <div class="header-left">
+                <img src="camera-icon.png" alt="camera-icon">
+            </div>
+
+            <div class="header-center">
+                <h1 class="title">BẢNG GIÁ IN ẢNH</h1>
+
+                <div class="shop-name">
+                    TẠI SHOP THIỆN VĨ
+                </div>
+            </div>
+
+            <div class="header-right">
+                <img src="save-moments-note.png" alt="save-moments-note">
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- BW PRINT -->
+    <section class="section">
+
+        <div class="bw-wrapper">
+
+            <table class="bw-table">
+                <thead>
+                    <tr>
+                        <th>IN TRẮNG ĐEN</th>
+                        <th>A4</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="text-left">
+                            In tài liệu trắng đen – Photocopy
+                        </td>
+                        <td>500đ</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="paper-stack">
+                <img src="paper-stack.png" alt="paper-stack">
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- COLOR PRINT -->
+    <section class="section">
+
+        <table class="color-table">
+
+            <thead>
+                <tr>
+                    <th>IN MÀU</th>
+                    <th>A5</th>
+                    <th>A4</th>
+                    <th>A3</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td data-description="GiayMong70g_450.html">Giấy mỏng 70g (in tài liệu)</td>
+                    <td>500đ</td>
+                    <td>1.000đ</td>
+                    <td>Không có</td>
+                </tr>
+
+                <tr>
+                    <td data-description="GiayDay160g_450.html">Giấy dày 160g (vẽ tranh)</td>
+                    <td>1.000đ</td>
+                    <td>3.000đ</td>
+                    <td>5.000đ</td>
+                </tr>
+
+                <tr>
+                    <td data-description="GiayDecal100g_450.html">Giấy decal 100g (in ảnh)</td>
+                    <td>3.000đ</td>
+                    <td>6.000đ</td>
+                    <td>12.000đ</td>
+                </tr>
+
+                <tr>
+                    <td data-description="GiayAnh120g_450.html">Giấy ảnh 120g bóng</td>
+                    <td>5.000đ</td>
+                    <td>9.000đ</td>
+                    <td>18.000đ</td>
+                </tr>
+
+                <tr>
+                    <td data-description="GiayAnh240gKodak_450.html">Giấy ảnh 240g bóng Kodak</td>
+                    <td>13.000đ</td>
+                    <td>25.000đ</td>
+                    <td>Không có</td>
+                </tr>
+
+                <tr>
+                    <td>[DV thêm] Ép plastic</td>
+                    <td>+3.000đ</td>
+                    <td>+5.000đ</td>
+                    <td>+8.000đ</td>
+                </tr>
+
+                <tr>
+                    <td>[DV thêm] Cán màn trong suốt</td>
+                    <td>+2.000đ</td>
+                    <td>+4.000đ</td>
+                    <td>+8.000đ</td>
+                </tr>
+            </tbody>
+
+        </table>
+
+    </section>
+
+    <!-- CARD PRINT -->
+    <section class="section">
+
+        <div class="card-section">
+
+            <table class="card-table">
+
+                <thead>
+                    <tr>
+                        <th>IN CARD</th>
+                        <th>55mm x 85mm</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Không ép</td>
+                        <td>1.000đ</td>
+                    </tr>
+
+                    <tr>
+                        <td>Có ép plastic</td>
+                        <td>2.500đ</td>
+                    </tr>
+
+                    <tr>
+                        <td>Hologram + plastic</td>
+                        <td>5.000đ</td>
+                    </tr>
+                </tbody>
+
+            </table>
+
+            <div class="business-card-image">
+                <img src="bussiness-card.png" alt="business-card">
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- PHOTO ID -->
+    <section class="section">
+
+        <div class="id-banner">
+
+            <div class="id-banner-text">
+                <h3>IN ẢNH THẺ SIÊU BỀN</h3>
+                <p>Liên hệ để gửi ảnh để tư vấn</p>
+            </div>
+
+            <div class="id-photo-image">
+                <img src="id-photo.png" alt="id-photo">
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="wave-animation">
+            <div class="toes">
+                <div class="toe">
+                    <img style="width: 130px;" src="logo.png" alt="">
+                </div>
+                
+                <div class="toe">
+                    <div class="toe-nail">
+                        <img class="logo" src="zalo.png" alt="">
+                        <a class="contact-detail"
+                          href="https://zalo.me/84939963285"
+                          target="_blank"
+                          rel="noopener">
+                            0939.963.285
+                        </a>
+                    </div>
+                    
+                    <div class="toe-nail">
+                        <img class="logo" src="gmail.png" alt="">
+                        <a class="contact-detail" href="mailto:nguyenanvi122333@gmail.com?subject=From%20your%printing%20pricing">nguyenanvi122333@gmail.com</a>
+                    </div>
+                    <div class="toe-nail">
+                        <a class="github-link" href="http://github.com/nguyenanvi">nguyenanvi</a>
+                    </div>
+                </div>
+
+                <div class="toe">
+                    <img style="width: 200px;" src="corner.png" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <iframe src="" frameborder="0" id="lens-preview" style="display: none;"></iframe>
+
+</div>
+
+</body>
+<script>
+const previewFrame = document.getElementById("lens-preview");
+
+previewFrame.show = function(){
+    this.style.display = 'block';
+}
+
+previewFrame.hide = function(){
+    this.style.display = 'none';
+}
+
+previewFrame.loadIframe = function (htmldoc) {
+    this.removeAttribute("src");
+    const iframeDoc = this.contentDocument || this.contentWindow.document;
+    iframeDoc.open();
+    iframeDoc.write('');
+    iframeDoc.close();
+    if (htmldoc) {
+        this.src = htmldoc;
+        this.style.width = `${htmldoc.split("_")[1].split(".")[0]}px`;
+        this.style.height = "400px";
+        this.show();
+        // console.log(`Loaded iframe: ${this.src} !== ${htmldoc}`);
+    } else {
+        this.hide();
+        // console.log(`Cleared iframe.`);
+    }
+}
+
+previewFrame.setPosition = function (x, y) {
+  this.style.left = `${x}px`;
+  this.style.top = `${y}px`;
+}
+
+let mx = 0;
+let my = 0;
+
+
+let descriptionCheck = false;
+let outA;
+
+document.addEventListener("mousemove", e => {
+  const td = e.target.closest("td");
+  if(td){
+    if ( 
+      td.dataset.description 
+      && (
+        previewFrame.src.split('/')[previewFrame.src.split('/').length-1] !== td.dataset.description
+      )
+    ){
+      clearTimeout(outA);
+      outA = setTimeout(function(){
+        // console.log(`${previewFrame.src.split('/')[previewFrame.src.split('/').length-1]};;;${td.dataset.description}`)
+        previewFrame.loadIframe(td.dataset.description)
+        previewFrame.setPosition(e.clientX, e.clientY);
+      }, 1000)
+    }
+  } else {
+    clearTimeout(outA);    
+    previewFrame.loadIframe();
+  }
+});
+
+
+function resizeIframe(iframe) {
+    iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
+    iframe.style.width = iframe.contentWindow.document.body.scrollWidth + 'px';
+}
+</script>
+</html>
