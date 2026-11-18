@@ -20,6 +20,7 @@
 
 <title>Bảng Giá In Ảnh</title>
 
+<link rel="stylesheet" href="switch.css">
 <style>
 @font-face {
     font-family: "zzz";
@@ -89,15 +90,25 @@ body{
     box-shadow: var(--shadow);
     overflow:hidden;
     border-radius: 16px;
-    margin: auto auto;
+    margin: 2rem auto;
   }
 
-@media print {
-    .a4-page {
+/* Responsive */
+@media screen and (max-width: 794px) {
+    .a4-page{
+        width: 100%;
+        height: 100%;
         margin: 0;
-        box-shadow: none;
-        border: none;
+        border-radius: 0;
     }
+}
+
+/* ================= HAT ================= */
+.menu-control{
+    height: 36px;
+    background-color: brown;
+    width: 100%;
+    display: flex;
 }
 
 /* ================= HEADER ================= */
@@ -161,6 +172,16 @@ body{
     display:block;
 }
 
+/* responsive */
+@media screen and (max-width: 794px) {
+    .title{
+        font-size: 40px !important;
+    }
+    .shop-name{
+        font-size: 30px !important;
+    }
+}
+
 /* ================= TABLE COMMON ================= */
 
 .section{
@@ -213,6 +234,7 @@ tbody td:not(:first-child){
 .bw-wrapper{
     display:flex;
     gap:0;
+    align-items: flex-end;
 }
 
 .bw-table{
@@ -228,7 +250,7 @@ tbody td:not(:first-child){
 
 .paper-stack{
     width:200px;
-    height: 165px;
+    max-height: 150px;
     margin-top: -60px;
 }
 
@@ -238,10 +260,6 @@ tbody td:not(:first-child){
 }
 
 /* ================= COLOR PRINT ================= */
-
-.color-table{
-    border:2px solid #cf2a63;
-}
 
 .color-table thead th,
 .color-table tbody td
@@ -402,7 +420,7 @@ animation: 20s waves linear infinite forwards;
     align-items: center;
     justify-content: flex-end;
     
-    text-shadow:1px 1px 4px gray;
+    text-shadow:1px 1px 4px black;
 }
 .logo{
     width: 24px;
@@ -415,8 +433,6 @@ animation: 20s waves linear infinite forwards;
 .contact-detail{
     font-size:20px;
     color: var(--surface);
-    text-shadow: 
-        0 0 3px var(--text);
 }
 
 .github-link{
@@ -425,11 +441,33 @@ animation: 20s waves linear infinite forwards;
     font-size: 10px; 
     text-decoration: none;
     color: var(--surface);
-    text-shadow: 0 0 3px var(--text);
-
 }
 .github-link:visited{
     text-decoration: none;
+}
+
+/* Print handler */
+@media print {
+    table{
+        border-radius: 0px;
+    }
+    td{
+        border: 1px solid black;
+    }
+    .a4-page {
+        margin: 0 !important;
+        border: none;
+    }
+    .menu-control{
+        display: none;
+    }
+    .toe-nail{
+        text-shadow: unset !important;
+        color: black;
+    }
+    .wave-animation{
+        animation: none !important;
+    }
 }
 
 </style>
@@ -437,8 +475,32 @@ animation: 20s waves linear infinite forwards;
 </head>
 
 <body>
-<div id="content" class="a4-page">
+<div class="menu-control">
+    <!-- From Uiverse.io by alexruix --> 
+    <label class="switch">
+        <input checked type="checkbox" onchange="changeTheme()">
+        <span class="slider"></span>
+    </label>
+    <script>
+        let changeTheme = function (){
+            const root = document.documentElement;
+            const dark = root.dataset.theme === "dark";
 
+            if (dark) {
+                root.style.setProperty("--bg", "#f8fafc");
+                root.style.setProperty("--surface", "#ffffff");
+                root.style.setProperty("--text", "#0f172a");
+                root.dataset.theme = "light";
+            } else {
+                root.style.setProperty("--bg", "#0f172a");
+                root.style.setProperty("--surface", "#1e293b");
+                root.style.setProperty("--text", "#f8fafc");
+                root.dataset.theme = "dark";
+            }
+        }
+    </script>
+</div>
+<div id="content" class="a4-page">
     <!-- HEADER -->
     <section class="header">
 
